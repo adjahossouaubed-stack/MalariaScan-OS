@@ -1,24 +1,40 @@
-# Python
+# --- Python ---
 __pycache__/
 *.py[cod]
-*.pyo
-.venv/
-venv/
+*$py.class
+*.so
+.Python
 env/
+venv/
+.venv/
+ENV/
+*.egg-info/
+.pytest_cache/
 
-# Node / Vite
+# --- Node / React ---
 node_modules/
-malaria-ui/node_modules/
-malaria-ui/dist/
 npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.env
+.env.local
 
-# Generated archives and runtime artifacts
-malaria-ui.zip
-temp_last_scan.png
-temp_heatmap.png
+# --- Build outputs ---
+build/
+dist/
+*.log
 
-# Local editor and tool configuration
-.vscode/*
-!.vscode/extensions.json
-.idea/
+# --- Fichiers temporaires générés par l'appli (scans, heatmaps de test) ---
+temp_*.png
+temp_*.jpg
+
+# --- Modèles ML volumineux (à gérer avec Git LFS si besoin) ---
+*.pth
+*.pt
+*.h5
+
+# --- OS / éditeurs ---
 .DS_Store
+Thumbs.db
+.vscode/
+.idea/
