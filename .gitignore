@@ -29,9 +29,6 @@ temp_*.png
 temp_*.jpg
 
 # --- Modèles ML volumineux (à gérer avec Git LFS si besoin) ---
-*.pth
-*.pt
-*.h5
 
 # --- OS / éditeurs ---
 .DS_Store
